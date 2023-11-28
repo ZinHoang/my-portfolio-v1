@@ -5,7 +5,7 @@ import './Header.styles';
 import 'aos/dist/aos.css';
 import {
   FadeUpAnimation,
-  HeaderButtonLink,
+  HeaderButtonLinkContainer,
   HeaderContainer,
   HeaderParagraph,
   HeaderProfile,
@@ -17,6 +17,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { RiMessengerFill } from 'react-icons/ri';
+import { PrimaryButtonLink, ButtonLink } from 'src/styles/ButtonLink';
 
 export const Header = () => {
   // useEffect(() => {
@@ -40,14 +41,10 @@ export const Header = () => {
             highly performant website today!
           </HeaderParagraph>
 
-          <HeaderButtonLink>
-            <a href="#contact" className="btn primary">
-              Let's Talk
-            </a>
-            <a href="#portfolio" className="btn light">
-              My Work
-            </a>
-          </HeaderButtonLink>
+          <HeaderButtonLinkContainer>
+            <PrimaryButtonLink href="#contact">Let's Talk</PrimaryButtonLink>
+            <ButtonLink href="#portfolio">My Work</ButtonLink>
+          </HeaderButtonLinkContainer>
 
           <SocialMediaLinkContainer>
             <SocialMediaLink

@@ -55,7 +55,7 @@ export const HeaderParagraph = styled.p`
   }
 `;
 
-export const HeaderButtonLink = styled.div`
+export const HeaderButtonLinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -90,5 +90,8 @@ export const IconLink = styled.a`
     background: var(--color-primary);
     color: var(--color-white);
     transform: translateX(-0.5rem);
+  }
+  &:not(:hover) {
+    transform: translateX(0);
   }
 `;
