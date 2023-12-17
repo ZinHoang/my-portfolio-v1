@@ -1,6 +1,7 @@
 import React from 'react'
-import './about.css'
+import './About.styles'
 
+// To display cat photos and include the fun fact about my cat allergy
 export const About = () => {
   return (
     <section id="about">
