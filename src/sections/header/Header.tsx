@@ -1,6 +1,4 @@
 import React from 'react';
-import headerImage from '../../assets/header.jpg';
-import './Header.styles';
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -8,7 +6,6 @@ import {
   HeaderButtonLinkContainer,
   HeaderContainer,
   HeaderParagraph,
-  HeaderProfile,
   HeaderWrapper,
   IconLink,
   SocialMediaLinkContainer,
@@ -18,6 +15,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { RiMessengerFill } from 'react-icons/ri';
 import { PrimaryButtonLink, ButtonLink } from 'src/styles/ButtonLink';
+import { HeaderPhotoSlider } from './components/HeaderPhotoSlider';
 
 export const Header = () => {
   // useEffect(() => {
@@ -27,12 +25,9 @@ export const Header = () => {
   return (
     // Might need to apply separate animation for different sections
     <FadeUpAnimation>
+      <HeaderPhotoSlider />
       <HeaderWrapper>
         <HeaderContainer>
-          <HeaderProfile>
-            <img src={headerImage} alt="Header Portrait" />
-          </HeaderProfile>
-
           <h3> Roger Federer</h3>
 
           <HeaderParagraph>
