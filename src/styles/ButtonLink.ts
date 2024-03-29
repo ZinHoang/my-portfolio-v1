@@ -2,13 +2,11 @@ import styled from 'styled-components';
 
 export const ButtonLink = styled.a`
   display: inline-block;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  min-width: 10rem;
+  text-align: center;
   background: var(--color-light);
   color: var(--color-black);
-  padding: 0.6rem 2.5rem;
+  padding: 0.6rem 1rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius-2);
   cursor: pointer;

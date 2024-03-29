@@ -6,13 +6,14 @@ export const NavbarWrapper = styled.nav`
   height: 5rem;
   display: grid;
   place-items: center;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   position: fixed;
   top: 0;
   left: 0;
-  /* Try removing this z-index if possible */
-  z-index: 9;
-  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  /* Remove this z-index if possible */
+  z-index: 1;
+  /* box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%); */
+  margin-top: 1rem;
   transition: var(--transition);
 `;
 
@@ -23,21 +24,25 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavbarLogoLink = styled.a`
-  width: 2.5rem;
+  /* width: 2.5rem;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden; */
+  color: white;
 `;
 
-export const NavbarMenu = styled.ul`
+export const NavbarMenu = styled.div`
+  a {
+    color: white;
+  }
   display: flex;
   gap: 3.5rem;
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
+    display: none;
+  } */
+  /* Will need to readjust depending on when introducing the Navbar */
+  @media screen and (max-width: 728px) {
     display: none;
   }
-`;
-
-export const MenuItem = styled.a`
-  color: white;
 `;
 
 export const ThemeButton = styled.button`

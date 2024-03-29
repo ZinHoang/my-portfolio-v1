@@ -11,7 +11,7 @@ import {
   SocialMediaLinkContainer,
 } from './Header.styles';
 import { FaFacebookF } from 'react-icons/fa';
-import { AiFillGithub } from 'react-icons/ai';
+import { PiGithubLogoFill } from 'react-icons/pi';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { RiMessengerFill } from 'react-icons/ri';
 import { PrimaryButtonLink, ButtonLink } from 'src/styles/ButtonLink';
@@ -28,7 +28,7 @@ export const Header = () => {
       <HeaderPhotoSlider />
       <HeaderWrapper>
         <HeaderContainer>
-          <h3> Roger Federer</h3>
+          <h3> Zin Hoang</h3>
 
           <HeaderParagraph>
             You are a click away from building your dream website or web app.
@@ -37,8 +37,8 @@ export const Header = () => {
           </HeaderParagraph>
 
           <HeaderButtonLinkContainer>
-            <PrimaryButtonLink href="#contact">Let's Talk</PrimaryButtonLink>
-            <ButtonLink href="#portfolio">My Work</ButtonLink>
+            <PrimaryButtonLink href="#contact">Say Hi</PrimaryButtonLink>
+            <ButtonLink href="#portfolio">View Projects</ButtonLink>
           </HeaderButtonLinkContainer>
 
           <SocialMediaLinkContainer>
@@ -56,7 +56,7 @@ export const Header = () => {
             />
             <SocialMediaLink
               href="https://github.com/ZinHoang"
-              icon={<AiFillGithub />}
+              icon={<PiGithubLogoFill />}
             />
           </SocialMediaLinkContainer>
         </HeaderContainer>

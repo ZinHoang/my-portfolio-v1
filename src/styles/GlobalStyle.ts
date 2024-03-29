@@ -12,12 +12,14 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 :root {
-  --primary-hue: 270;
+  /* --primary-hue: 270; */
+  --primary-hue: 208;
   --black-lightness: 15%;
   --dark-lightness: 44%;
   --light-lightness: 94%;
   --white-lightness: 100%;
-  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  /* --color-primary: hsl(var(--primary-hue), 89%, 41%); */
+  --color-primary: hsl(var(--primary-hue), 52%, 18%);
   --color-white: hsl(0, 5%, var(--white-lightness));
   --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
@@ -58,6 +60,7 @@ body {
 section {
   padding: 10rem 0;
   background: var(--color-light);
+  /* background: white; */
   transition: var(--transition);
 }
 
@@ -140,14 +143,14 @@ img {
   transform: translateY(-0.5rem);
 }
 
-.btn.white {
+/* --- Looks like the following stlye is not used anywhere --- */
+/* .btn.white {
   background: var(--color-white);
 }
-
 .btn.white:hover {
   background: transparent;
   border-color: var(--color-white);
-}
+} */
 
 .btn.primary {
   background: var(--color-primary);

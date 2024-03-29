@@ -10,8 +10,8 @@ export const FadeUpAnimation = styled.div.attrs({
 } as React.HTMLAttributes<HTMLDivElement>)``;
 
 export const HeaderWrapper = styled.header`
-  margin-top: 5rem;
-  height: calc(100vh - 5rem);
+  margin: 3rem 0;
+  /* height: calc(100vh - 5rem); */
   display: grid;
   place-items: center;
   background: var(--color-white);
@@ -19,8 +19,9 @@ export const HeaderWrapper = styled.header`
 
   /* MEDIA QUERIES (tablets) */
   @media screen and (max-width: 1024px) {
-    margin-top: 0;
-    height: 100vh;
+    /* margin-top: 0; */
+    margin: 3rem 0;
+    /* height: 100vh; */
   }
 `;
 
@@ -72,7 +73,10 @@ export const SocialMediaLinkContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
+    display: none;
+  } */
+  @media screen and (max-width: 966px) {
     display: none;
   }
 `;
